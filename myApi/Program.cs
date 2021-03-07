@@ -23,23 +23,6 @@ namespace myApi
 
                 var webHost = CreateWebHostBuilder(args).Build();
 
-                //using (var scope = webHost.Services.CreateScope())
-                //{
-                //    try
-                //    {
-                //        var context = scope.ServiceProvider.GetService<PersonContext>();
-
-                //        // Demo Purposes: Delete database & migrate on startup to sanitize while building API
-                //        // context.Database.EnsureDeleted();
-                //        // context.Database.Migrate();
-
-                //    }
-                //    catch (Exception ex)
-                //    {
-                //        logger.Error(ex, "An error occurred while migrating the database");
-                //    }
-                //}
-
                 webHost.Run();      // Run the web app!!
             }
             catch (Exception ex)
