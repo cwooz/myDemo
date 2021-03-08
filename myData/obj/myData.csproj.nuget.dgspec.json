@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\woosleyc\\source\\repos\\myDemo\\myApi\\myApi.csproj": {}
+    "C:\\Users\\woosleyc\\source\\repos\\myDemo\\myData\\myData.csproj": {}
   },
   "projects": {
-    "C:\\Users\\woosleyc\\source\\repos\\myDemo\\myApi\\myApi.csproj": {
+    "C:\\Users\\woosleyc\\source\\repos\\myDemo\\myData\\myData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\woosleyc\\source\\repos\\myDemo\\myApi\\myApi.csproj",
-        "projectName": "myApi",
-        "projectPath": "C:\\Users\\woosleyc\\source\\repos\\myDemo\\myApi\\myApi.csproj",
+        "projectUniqueName": "C:\\Users\\woosleyc\\source\\repos\\myDemo\\myData\\myData.csproj",
+        "projectName": "myData",
+        "projectPath": "C:\\Users\\woosleyc\\source\\repos\\myDemo\\myData\\myData.csproj",
         "packagesPath": "C:\\Users\\woosleyc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\woosleyc\\source\\repos\\myDemo\\myApi\\obj\\",
+        "outputPath": "C:\\Users\\woosleyc\\source\\repos\\myDemo\\myData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -23,15 +23,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.1"
+          "netstandard2.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.1": {
-            "targetAlias": "netcoreapp2.1",
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -42,37 +42,14 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.1": {
-          "targetAlias": "netcoreapp2.1",
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "Microsoft.AspNetCore.App": {
+            "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.1, )",
+              "version": "[2.0.3, )",
               "autoReferenced": true
-            },
-            "Microsoft.AspNetCore.Razor.Design": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.1.2, )"
-            },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.1.0, )",
-              "autoReferenced": true
-            },
-            "NLog.Web.AspNetCore": {
-              "target": "Package",
-              "version": "[4.11.0, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.1.0, )"
             }
           },
           "imports": [
