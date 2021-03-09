@@ -28,3 +28,71 @@
 2021-03-09 11:11:19.6475|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myApi.Models.PersonDto, myApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
 2021-03-09 11:11:19.7090|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action myApi.Controllers.PersonController.GetPersons (myApi) in 165.2026ms
 2021-03-09 11:11:19.7204|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 237.4431ms 200 application/json; charset=utf-8
+2021-03-09 13:53:21.3315|INFO|myApi.Program|Initializing application...
+2021-03-09 13:53:24.2358|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\woosleyc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-03-09 13:53:25.0981|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2021-03-09 13:53:25.0981|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2021-03-09 13:53:25.1827|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 84.449ms 200 
+2021-03-09 13:53:25.5174|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 420.8028ms 404 text/plain
+2021-03-09 13:53:32.5015|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/people  
+2021-03-09 13:53:32.5646|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPersons", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPersons() on controller myApi.Controllers.PersonController (myApi).
+2021-03-09 13:53:32.5873|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action myApi.Controllers.PersonController.GetPersons (myApi) in 7.5403ms
+2021-03-09 13:53:32.6689|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2021-03-09 13:53:32.7356|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 229.7259ms 500 text/html; charset=utf-8
+2021-03-09 13:55:01.8276|INFO|myApi.Program|Initializing application...
+2021-03-09 13:55:04.6035|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\woosleyc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-03-09 13:55:05.4359|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/people  
+2021-03-09 13:55:05.4359|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2021-03-09 13:55:05.4367|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2021-03-09 13:55:05.5033|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 68.5833ms 200 
+2021-03-09 13:55:05.7503|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 317.6262ms 404 text/plain
+2021-03-09 13:55:05.7947|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPersons", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPersons() on controller myApi.Controllers.PersonController (myApi).
+2021-03-09 13:55:05.8146|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action myApi.Controllers.PersonController.GetPersons (myApi) in 7.3819ms
+2021-03-09 13:55:05.8896|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2021-03-09 13:55:05.9547|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 521.1599ms 500 text/html; charset=utf-8
+2021-03-09 13:55:07.3398|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/people  
+2021-03-09 13:55:07.3481|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPersons", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPersons() on controller myApi.Controllers.PersonController (myApi).
+2021-03-09 13:55:07.3609|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action myApi.Controllers.PersonController.GetPersons (myApi) in 2.895ms
+2021-03-09 13:55:07.3609|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2021-03-09 13:55:07.3826|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 43.5968ms 500 text/html; charset=utf-8
+2021-03-09 13:57:09.0103|INFO|myApi.Program|Initializing application...
+2021-03-09 13:57:11.4063|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2021-03-09 13:57:12.0141|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2021-03-09 13:57:12.0141|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2021-03-09 13:57:12.0518|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM735KIRAFTN", Request id "0HM735KIRAFTN:00000001": An unhandled exception was thrown by the application.
+2021-03-09 13:57:12.0668|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 54.1727ms 500 
+2021-03-09 13:57:12.0941|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 82.3987ms 500 text/html; charset=utf-8
+2021-03-09 13:57:39.3462|INFO|myApi.Program|Initializing application...
+2021-03-09 13:57:41.9897|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2021-03-09 13:57:42.8357|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2021-03-09 13:57:42.8357|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2021-03-09 13:57:42.9038|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 69.3824ms 500 text/html; charset=utf-8
+2021-03-09 13:57:42.9250|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM735KRVO8J9", Request id "0HM735KRVO8J9:00000001": An unhandled exception was thrown by the application.
+2021-03-09 13:57:42.9417|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 112.3702ms 500 
+2021-03-09 13:57:47.1302|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/people  
+2021-03-09 13:57:47.1419|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 10.0952ms 500 text/html; charset=utf-8
+2021-03-09 13:59:27.8039|INFO|myApi.Program|Initializing application...
+2021-03-09 13:59:30.1859|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2021-03-09 13:59:30.7958|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2021-03-09 13:59:30.7958|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2021-03-09 13:59:30.8582|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 55.7168ms 500 
+2021-03-09 13:59:30.8582|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 72.45ms 500 text/html; charset=utf-8
+2021-03-09 13:59:35.1706|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/people  
+2021-03-09 13:59:35.1849|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12.9533ms 500 text/html; charset=utf-8
+2021-03-09 13:59:36.3967|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/people  
+2021-03-09 13:59:36.4125|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16.6577ms 500 text/html; charset=utf-8
+2021-03-09 13:59:37.2692|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/people  
+2021-03-09 13:59:37.2796|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.9854ms 500 text/html; charset=utf-8
+2021-03-09 14:01:07.3635|INFO|myApi.Program|Initializing application...
+2021-03-09 14:01:10.4104|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\woosleyc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-03-09 14:01:11.4814|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2021-03-09 14:01:11.4814|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2021-03-09 14:01:11.5636|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 82.2616ms 200 
+2021-03-09 14:01:11.9526|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 473.7641ms 404 text/plain
+2021-03-09 14:01:15.5936|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/people  
+2021-03-09 14:01:15.6494|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPersons", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPersons() on controller myApi.Controllers.PersonController (myApi).
+2021-03-09 14:01:15.7432|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method myApi.Controllers.PersonController.GetPersons (myApi) - Validation state: Valid
+2021-03-09 14:01:15.7552|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method myApi.Controllers.PersonController.GetPersons (myApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.4588ms.
+2021-03-09 14:01:15.7728|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myApi.Models.PersonDto, myApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-09 14:01:15.8335|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action myApi.Controllers.PersonController.GetPersons (myApi) in 175.9469ms
+2021-03-09 14:01:15.8418|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 248.2467ms 200 application/json; charset=utf-8

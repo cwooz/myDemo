@@ -29,7 +29,8 @@
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
           "NLog.Web.AspNetCore": "4.11.0",
-          "Swashbuckle.AspNetCore": "6.1.0"
+          "Swashbuckle.AspNetCore": "6.1.0",
+          "myData": "1.0.0"
         },
         "runtime": {
           "myApi.dll": {}
@@ -228,6 +229,14 @@
         },
         "compile": {
           "lib/netstandard2.0/System.Text.Json.dll": {}
+        }
+      },
+      "myData/1.0.0": {
+        "runtime": {
+          "myData.dll": {}
+        },
+        "compile": {
+          "myData.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3458,6 +3467,11 @@
       "sha512": "sha512-4F8Xe+JIkVoDJ8hDAZ7HqLkjctN/6WItJIzQaifBwClC7wmoLSda/Sv2i6i1kycqDb3hWF4JCVbpAweyOKHEUA==",
       "path": "system.text.json/4.6.0",
       "hashPath": "system.text.json.4.6.0.nupkg.sha512"
+    },
+    "myData/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",

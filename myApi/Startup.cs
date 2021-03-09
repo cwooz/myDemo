@@ -1,4 +1,5 @@
-﻿using AutoMapper.Configuration;
+﻿using AutoMapper;
+using AutoMapper.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -46,7 +47,7 @@ namespace myApi
             //    });
             //});
 
-            //services.AddScoped<IPersonRepository, PersonRepository>();
+            services.AddScoped<IPersonRepository, PersonRepository>();
 
             //services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 

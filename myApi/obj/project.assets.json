@@ -4494,6 +4494,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "myData/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/myData.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/myData.dll": {}
+        }
       }
     }
   },
@@ -12306,6 +12316,11 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "myData/1.0.0": {
+      "type": "project",
+      "path": "../myData/myData.csproj",
+      "msbuildProject": "../myData/myData.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12315,7 +12330,8 @@
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
       "NLog.Web.AspNetCore >= 4.11.0",
-      "Swashbuckle.AspNetCore >= 6.1.0"
+      "Swashbuckle.AspNetCore >= 6.1.0",
+      "myData >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12351,7 +12367,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "targetAlias": "netcoreapp2.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\woosleyc\\source\\repos\\myDemo\\myData\\myData.csproj": {
+              "projectPath": "C:\\Users\\woosleyc\\source\\repos\\myDemo\\myData\\myData.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

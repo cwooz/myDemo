@@ -15,16 +15,20 @@ namespace myApi.Services
 
         public IEnumerable<Person> GetPersons()
         {
-            throw new NotImplementedException();
+            return (IEnumerable<Person>)PersonDataStore.Current.Persons.OrderBy(p => p.Name).ToList();
         }
 
         public Person GetPerson(int id)
         {
+            //return PersonDataStore.Current.Persons.Where(p => p.Id == id).FirstOrDefault();
+
             throw new NotImplementedException();
         }
 
         public void AddPerson(Person person)
         {
+            //PersonDataStore.Current.Persons.Add(person);
+
             throw new NotImplementedException();
         }
 
@@ -35,17 +39,9 @@ namespace myApi.Services
 
         //public void DeletePerson(Person person)
         //{
+        ////    PersonDataStore.Current.Persons.Remove(person);
+        //
         //    throw new NotImplementedException();
         //}
-
-        public bool Save()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool PersonExists(int cityId)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

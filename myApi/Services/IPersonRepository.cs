@@ -17,9 +17,5 @@ namespace myApi.Services
         //void UpdatePerson(int id, Person person);
 
         //void DeletePerson(Person person);
-
-        bool Save();
-
-        bool PersonExists(int cityId);
     }
 }

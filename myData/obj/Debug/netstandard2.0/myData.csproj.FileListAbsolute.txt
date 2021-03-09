@@ -1,0 +1,9 @@
+C:\Users\woosleyc\source\repos\myDemo\myData\bin\Debug\netstandard2.0\myData.deps.json
+C:\Users\woosleyc\source\repos\myDemo\myData\bin\Debug\netstandard2.0\myData.dll
+C:\Users\woosleyc\source\repos\myDemo\myData\bin\Debug\netstandard2.0\myData.pdb
+C:\Users\woosleyc\source\repos\myDemo\myData\obj\Debug\netstandard2.0\myData.csprojAssemblyReference.cache
+C:\Users\woosleyc\source\repos\myDemo\myData\obj\Debug\netstandard2.0\myData.AssemblyInfoInputs.cache
+C:\Users\woosleyc\source\repos\myDemo\myData\obj\Debug\netstandard2.0\myData.AssemblyInfo.cs
+C:\Users\woosleyc\source\repos\myDemo\myData\obj\Debug\netstandard2.0\myData.csproj.CoreCompileInputs.cache
+C:\Users\woosleyc\source\repos\myDemo\myData\obj\Debug\netstandard2.0\myData.dll
+C:\Users\woosleyc\source\repos\myDemo\myData\obj\Debug\netstandard2.0\myData.pdb

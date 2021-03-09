@@ -15,29 +15,31 @@ namespace myApi.Controllers
     public class PersonController : ControllerBase
     {
         private readonly ILogger<PersonController> _logger;
-        //private readonly IPersonRepository _personRepository;
+        private readonly IPersonRepository _personRepository;
         //private readonly IMapper _mapper;
 
-        public PersonController(ILogger<PersonController> logger)
-        //public PersonController(ILogger<PersonController> logger, IPersonRepository personRepository, IMapper mapper)
+        public PersonController(ILogger<PersonController> logger, IPersonRepository personRepository)
         {
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
-            //_personRepository = personRepository ?? throw new ArgumentNullException(nameof(personRepository));
-            //_mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
+            _personRepository = personRepository ?? throw new ArgumentNullException(nameof(personRepository));
+            //_mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));      , IMapper mapper
         }
 
 
         [HttpGet(Name = "GetPersons")]
         public IActionResult GetPersons()
         {
-            return Ok(PersonDataStore.Current.Persons);               // Call to In-Memory Data Store
+            return Ok(PersonDataStore.Current.Persons);               // Direct call to In-Memory Data Store
+
+            // var personsEntities = _personRepository.GetPersons();
+            // return Ok(_mapper.Map<IEnumerable<PersonDto>>(personsEntities));
         }
 
 
         [HttpGet("{id}")]
         public IActionResult GetPerson(int id)
         {
-            var personToReturn = PersonDataStore.Current.Persons.FirstOrDefault(c => c.Id == id);        // Call to In-Memory Data Store
+            var personToReturn = PersonDataStore.Current.Persons.FirstOrDefault(c => c.Id == id);        // Direct call to In-Memory Data Store
 
             try
             {
