@@ -61,7 +61,7 @@ namespace myApi.Controllers
         [HttpPost]
         public IActionResult CreatePerson([FromBody] PersonForCreationDto createdPerson)
         {
-            if (createdPerson.Email == createdPerson.Name)
+            if (createdPerson.Name == createdPerson.Email)
             {
                 ModelState.AddModelError(
                     "Email",
@@ -75,7 +75,26 @@ namespace myApi.Controllers
 
 
 
-            //     ?????       Calculate max ID in DataStore & increment by 1
+            // Calculate max ID in DataStore & increment by 1
+            var maxPersonId = PersonDataStore.Current.Persons.Max(p => p.Id);
+
+            var personToBeAdded = new PersonDto()
+            {
+                Id = ++maxPersonId,
+                Name = createdPerson.Name,
+                Email = createdPerson.Email
+            };
+
+
+            // PersonDataStore.Persons.Add(personToBeAdded);           // ??? NOT SURE YET ???
+
+
+            return CreatedAtRoute(
+                "GetPersons",
+                new { id = personToBeAdded.Id },
+                personToBeAdded);
+
+
 
 
 
@@ -91,7 +110,6 @@ namespace myApi.Controllers
             //    "GetPersons",
             //    new { id = createdPersonToBeReturned.Id },
             //    createdPersonToBeReturned);
-            return Ok();
         }
     }
 }

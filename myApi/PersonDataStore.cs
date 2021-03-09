@@ -12,6 +12,8 @@ namespace myApi
 
         public List<PersonDto> Persons { get; set; }
 
+        // public void Add<PersonDto> (personToBeAdded);
+
         public PersonDataStore()
         {
             // init dummy data
@@ -37,5 +39,10 @@ namespace myApi
                 }
             };
         }
+
+        //internal static void Add(PersonDto personToBeAdded)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
