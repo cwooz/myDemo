@@ -20,9 +20,7 @@ namespace myApi.Services
 
         public Person GetPerson(int id)
         {
-            //return PersonDataStore.Current.Persons.Where(p => p.Id == id).FirstOrDefault();
-
-            throw new NotImplementedException();
+            return (Person)PersonDataStore.Current.Persons.Where(p => p.Id == id);
         }
 
         public void AddPerson(Person person)

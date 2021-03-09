@@ -31,8 +31,8 @@ namespace myApi.Controllers
         {
             return Ok(PersonDataStore.Current.Persons);               // Direct call to In-Memory Data Store
 
-            // var personsEntities = _personRepository.GetPersons();
-            // return Ok(_mapper.Map<IEnumerable<PersonDto>>(personsEntities));
+            //var personsEntities = _personRepository.GetPersons();
+            //return Ok(_mapper.Map<IEnumerable<PersonDto>>(personsEntities));
         }
 
 
@@ -88,7 +88,7 @@ namespace myApi.Controllers
             };
 
 
-            // PersonDataStore.Persons.Add(personToBeAdded);           // ??? NOT SURE YET ???
+            PersonDataStore.Current.Persons.Add(personToBeAdded);
 
 
             return CreatedAtRoute(

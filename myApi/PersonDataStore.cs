@@ -12,7 +12,7 @@ namespace myApi
 
         public List<PersonDto> Persons { get; set; }
 
-        // public void Add<PersonDto> (personToBeAdded);
+        //public void Add<PersonDto> (personToBeAdded);
 
         public PersonDataStore()
         {
@@ -33,16 +33,11 @@ namespace myApi
                 },
                 new PersonDto()
                 {
-                    Id= 3,
+                    Id = 3,
                     Name = "Tom Smith",
                     Email = "tom.smith@test.com"
                 }
             };
         }
-
-        //internal static void Add(PersonDto personToBeAdded)
-        //{
-        //    throw new NotImplementedException();
-        //}
     }
 }
