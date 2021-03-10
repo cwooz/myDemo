@@ -75,10 +75,7 @@ namespace myApi.Controllers
                 return BadRequest();
             }
 
-
-
-            // Calculate max ID in DataStore & increment by 1
-            var maxPersonId = PersonDataStore.Current.Persons.Max(p => p.Id);
+            var maxPersonId = PersonDataStore.Current.Persons.Max(p => p.Id);        // Direct call to In-Memory Data Store
 
             var personToBeAdded = new PersonDto()
             {
@@ -95,8 +92,6 @@ namespace myApi.Controllers
                 "GetPersons",
                 new { id = personToBeAdded.Id },
                 personToBeAdded);
-
-
 
 
 
