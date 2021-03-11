@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "SvsiL1uGHvYxuR3o1fUZncSHQmh+/WM4UStAoCuWRFWL1jaOSkT5vA7NL6lEns5+hdwa84Eti8CCielA8m7q7g==",
+  "dgSpecHash": "7NVtnRhzY26n8MgLngaE2ZbzGvpn/H5R0mXr0k7PY38OkRPgsAU7Cx2W3qjMh73+hJiPeZfTV+wIQyoRS1Fxjw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wooz\\source\\repos\\myDemo\\myData\\myData.csproj",
+  "projectFilePath": "C:\\Users\\woosleyc\\source\\repos\\myDemo\\myData\\myData.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\wooz\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\wooz\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }
