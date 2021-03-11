@@ -20,8 +20,7 @@ namespace myApi
             try
             {
                 logger.Info("Initializing application...");
-
-                CreateWebHostBuilder(args).Build().Run();      // Run the web app!!
+                CreateWebHostBuilder(args).Build().Run();                     // Run the web app!!
             }
             catch (Exception ex)
             {

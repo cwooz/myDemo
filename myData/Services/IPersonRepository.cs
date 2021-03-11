@@ -1,15 +1,16 @@
-﻿using System;
+﻿using myData.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace myData.Services
 {
-    class IPersonRepository
+    public interface IPersonRepository
     {
-        //IEnumerable<Person> GetPersons();
+        //List<PersonDto> GetPersons();
 
-        //Person GetPerson(int id);
+        //PersonDto GetPerson(int id);
 
-        //void AddPerson(Person person);
+        //void SavePerson(PersonDto person);
     }
 }

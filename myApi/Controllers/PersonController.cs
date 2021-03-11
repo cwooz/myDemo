@@ -15,13 +15,13 @@ namespace myApi.Controllers
     public class PersonController : ControllerBase
     {
         private readonly ILogger<PersonController> _logger;
-        private readonly IPersonRepository _personRepository;
+        //private readonly IPersonRepository _personRepository;
         //private readonly IMapper _mapper;
 
-        public PersonController(ILogger<PersonController> logger, IPersonRepository personRepository)
+        public PersonController(ILogger<PersonController> logger)
         {
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
-            _personRepository = personRepository ?? throw new ArgumentNullException(nameof(personRepository));
+            //_personRepository = personRepository ?? throw new ArgumentNullException(nameof(personRepository));    , IPersonRepository personRepository
             //_mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));      , IMapper mapper
         }
 
