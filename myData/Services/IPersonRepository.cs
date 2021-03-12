@@ -7,10 +7,10 @@ namespace myData.Services
 {
     public interface IPersonRepository
     {
-        //List<PersonDto> GetPersons();
+        List<PersonDto> GetPersons();
 
-        //PersonDto GetPerson(int id);
+        PersonDto GetPerson(int id);
 
-        //void SavePerson(PersonDto person);
+        void SavePerson(PersonDto person);
     }
 }

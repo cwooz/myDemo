@@ -9,62 +9,55 @@ namespace myData.Services
 {
     public class PersonRepository : IPersonRepository
     {
-    //    public List<PersonDto> GetPersons()
-    //    {
-    //        throw new NotImplementedException();
+        public List<PersonDto> GetPersons()
+        {
+            return PersonDataStore.Current.Persons.OrderBy(p => p.Name).ToList();
+        }
 
-    //        //return (IEnumerable<Person>)PersonDataStore.Current.Persons.OrderBy(p => p.Name).ToList();
+        public PersonDto GetPerson(int id)
+        {
+            return (PersonDto)PersonDataStore.Current.Persons.Where(p => p.Id == id);
+        }
 
-    //    }
-
-    //    public PersonDto GetPerson(int id)
-    //    {
-    //        throw new NotImplementedException();
-
-    //        //return (Person)PersonDataStore.Current.Persons.Where(p => p.Id == id);
-    //    }
-
-    //    public void SavePerson(PersonDto person)
-    //    {
-    //        //PersonDataStore.Current.Persons.Add(person);
-
-    //        throw new NotImplementedException();
-    //    }
-    //}
+        public void SavePerson(PersonDto person)
+        {
+            PersonDataStore.Current.Persons.Add(person);
+        }
+    }
 
 
-    //public class PersonDataStore
-    //{
-    //    public static PersonDataStore Current { get; } = new PersonDataStore();     // Maintains working on same instance, unless restarting WebServer
+    public class PersonDataStore
+    {
+        public static PersonDataStore Current { get; } = new PersonDataStore();     // Maintains working on same instance, unless restarting WebServer
 
-    //    public List<PersonDto> Persons { get; set; }
+        public List<PersonDto> Persons { get; set; }
 
-    //    //public void Add<PersonDto> (personToBeAdded);
+        //public void Add<PersonDto> (personToBeAdded);
 
-    //    public PersonDataStore()
-    //    {
-    //        // init dummy data
-    //        Persons = new List<PersonDto>()
-    //        {
-    //            new PersonDto()
-    //            {
-    //                 Id = 1,
-    //                 Name = "John Doe",
-    //                 Email = "doej@test.com"
-    //            },
-    //            new PersonDto()
-    //            {
-    //                Id = 2,
-    //                Name = "Jane Doe",
-    //                Email = "doeja@test.com"
-    //            },
-    //            new PersonDto()
-    //            {
-    //                Id = 3,
-    //                Name = "Tom Smith",
-    //                Email = "tom.smith@test.com"
-    //            }
-    //        };
-    //    }
+        public PersonDataStore()
+        {
+            // init dummy data
+            Persons = new List<PersonDto>()
+            {
+                new PersonDto()
+                {
+                     Id = 1,
+                     Name = "John Doe",
+                     Email = "doej@test.com"
+                },
+                new PersonDto()
+                {
+                    Id = 2,
+                    Name = "Jane Doe",
+                    Email = "doeja@test.com"
+                },
+                new PersonDto()
+                {
+                    Id = 3,
+                    Name = "Tom Smith",
+                    Email = "tom.smith@test.com"
+                }
+            };
+        }
     }
 }
