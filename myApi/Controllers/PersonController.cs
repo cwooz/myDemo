@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using myData.Models;
+using myData.Entities;
 using myData.Services;
 using System;
 using System.Collections.Generic;
@@ -56,8 +56,6 @@ namespace myApi.Controllers
         [HttpGet("{id}")]
         public IActionResult GetPerson(int id)
         {
-            //var personToReturn = PersonDataStore.Current.Persons.FirstOrDefault(p => p.Id == id);        // Direct call to In-Memory Data Store
-            
             var personToReturn = _personRepository.GetPerson(id);
 
             try
@@ -69,8 +67,6 @@ namespace myApi.Controllers
                 }
 
                 _logger.LogInformation($"Returned an individual Person with ID: {personToReturn.Id}, Name: {personToReturn.Name}, and Email: {personToReturn.Email}.");
-                //return Ok(personToReturn);
-                
                 return Ok(_mapper.Map<PersonDto>(personToReturn));
 
             }
@@ -79,6 +75,9 @@ namespace myApi.Controllers
                 _logger.LogCritical($"Excection while getting a person with ID: {id}.", ex);
                 return StatusCode(500, "A problem happened while handling your request.");
             }
+
+            //var personToReturn = PersonDataStore.Current.Persons.FirstOrDefault(p => p.Id == id);        // Direct call to In-Memory Data Store
+            //return Ok(personToReturn);
         }
 
 
@@ -105,7 +104,6 @@ namespace myApi.Controllers
                 Name = createdPerson.Name,
                 Email = createdPerson.Email
             };
-
 
             PersonDataStore.Current.Persons.Add(personToBeAdded);
 

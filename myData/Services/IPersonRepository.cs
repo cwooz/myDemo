@@ -1,4 +1,4 @@
-﻿using myData.Models;
+﻿using myData.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;

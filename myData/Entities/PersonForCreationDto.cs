@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace myData.Models
+namespace myData.Entities
 {
-    public class PersonDto
+    public class PersonForCreationDto
     {
-        public int Id { get; set; }
-
         [Required(ErrorMessage = "Please provide a name value.")]
         [MaxLength(50)]
         public string Name { get; set; }
