@@ -16,13 +16,6 @@ namespace myApi
 {
     public class Startup
     {
-        //private readonly IConfiguration _configuration;
-
-        //public Startup(IConfiguration configuration)
-        //{
-        //    _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
-        //}
-
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.

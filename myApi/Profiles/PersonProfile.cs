@@ -13,7 +13,7 @@ namespace myApi.Profiles
         public PersonProfile()
         {
             CreateMap<myData.Models.PersonDto, myApi.Models.PersonModel>();
-            CreateMap<myApi.Models.PersonModel, myData.Models.PersonForCreationDto>();
+            CreateMap<myApi.Models.PersonModel, myData.Models.PersonToBeSavedDto>();
         }
     }
 }
