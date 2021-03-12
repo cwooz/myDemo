@@ -15,24 +15,24 @@ namespace myApi.Controllers
     public class PersonController : ControllerBase
     {
         private readonly ILogger<PersonController> _logger;
-        //private readonly IPersonRepository _personRepository;
-        //private readonly IMapper _mapper;
+        private readonly IPersonRepository _personRepository;
+        private readonly IMapper _mapper;
 
-        public PersonController(ILogger<PersonController> logger)
+        public PersonController(ILogger<PersonController> logger, IPersonRepository personRepository, IMapper mapper)
         {
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
-            //_personRepository = personRepository ?? throw new ArgumentNullException(nameof(personRepository));    , IPersonRepository personRepository
-            //_mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));      , IMapper mapper
+            _personRepository = personRepository ?? throw new ArgumentNullException(nameof(personRepository));
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
 
 
         [HttpGet(Name = "GetPersons")]
         public IActionResult GetPersons()
         {
-            return Ok(PersonDataStore.Current.Persons);               // Direct call to In-Memory Data Store
+            //return Ok(PersonDataStore.Current.Persons);               // Direct call to In-Memory Data Store
 
-            //var personsEntities = _personRepository.GetPersons();
-            //return Ok(_mapper.Map<IEnumerable<PersonDto>>(personsEntities));
+            var personsEntities = _personRepository.GetPersons();
+            return Ok(_mapper.Map<IEnumerable<PersonDto>>(personsEntities));
         }
 
 

@@ -10,8 +10,8 @@ namespace myApi.Profiles
     {
         public PersonProfile()
         {
-            CreateMap<Entities.Person, Models.PersonDto>();
-            CreateMap<Entities.Person, Models.PersonForCreationDto>();
+            CreateMap<Models.PersonDto, Models.PersonModel>();
+            CreateMap<Models.PersonModel, Models.PersonForCreationDto>();
         }
     }
 }

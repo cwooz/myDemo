@@ -32,8 +32,6 @@ namespace myData.Services
 
         public List<PersonDto> Persons { get; set; }
 
-        //public void Add<PersonDto> (personToBeAdded);
-
         public PersonDataStore()
         {
             // init dummy data
