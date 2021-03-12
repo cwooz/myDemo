@@ -5,7 +5,7 @@ using System.Text;
 
 namespace myData.Models
 {
-    public class PersonToBeSavedDto
+    public class PersonForCreationDto
     {
         [Required(ErrorMessage = "Please provide a name value.")]
         [MaxLength(50)]

@@ -29,35 +29,36 @@ namespace myApi.Controllers
         [HttpGet(Name = "GetPersons")]
         public IActionResult GetPersons()
         {
-            var personsEntities = _personRepository.GetPersons();               // Using Repository Pattern
+            //return Ok(PersonDataStore.Current.Persons);               // Direct call to In-Memory Data Store
+
+            var personsEntities = _personRepository.GetPersons();
 
             try
             {
                 if (personsEntities == null)
                 {
-                    _logger.LogInformation($"Persons were not found.");
+                    _logger.LogInformation("Persons were not found.");
                     return NotFound();
                 }
 
-                return Ok(_mapper.Map<List<PersonDto>>(personsEntities));       // Using AutoMapper
+                _logger.LogInformation("Returned list of all Persons.");
+                return Ok(_mapper.Map<List<PersonDto>>(personsEntities));
 
             }
             catch (Exception ex)
             {
-                _logger.LogCritical($"Excection while getting a persons.", ex);
+                _logger.LogCritical("Excection while getting a persons.", ex);
                 return StatusCode(500, "A problem happened while handling your request.");
             }
-
-            //return Ok(PersonDataStore.Current.Persons);                       // Direct call to In-Memory Data Store
         }
 
 
         [HttpGet("{id}")]
         public IActionResult GetPerson(int id)
         {
-            //var personToReturn = _personRepository.GetPerson(id);
-
-            var personToReturn = PersonDataStore.Current.Persons.FirstOrDefault(p => p.Id == id);        // Direct call to In-Memory Data Store
+            //var personToReturn = PersonDataStore.Current.Persons.FirstOrDefault(p => p.Id == id);        // Direct call to In-Memory Data Store
+            
+            var personToReturn = _personRepository.GetPerson(id);
 
             try
             {
@@ -67,9 +68,10 @@ namespace myApi.Controllers
                     return NotFound();
                 }
 
-                //return Ok(_mapper.Map<PersonDto>(personToReturn));
-
-                return Ok(personToReturn);
+                _logger.LogInformation($"Returned an individual Person with ID: {personToReturn.Id}, Name: {personToReturn.Name}, and Email: {personToReturn.Email}.");
+                //return Ok(personToReturn);
+                
+                return Ok(_mapper.Map<PersonDto>(personToReturn));
 
             }
             catch (Exception ex)
@@ -81,7 +83,7 @@ namespace myApi.Controllers
 
 
         [HttpPost]
-        public IActionResult SavePerson([FromBody] PersonToBeSavedDto createdPerson)
+        public IActionResult SavePerson([FromBody] PersonForCreationDto createdPerson)
         {
             if (createdPerson.Name == createdPerson.Email)
             {
@@ -105,10 +107,10 @@ namespace myApi.Controllers
             };
 
 
-
             PersonDataStore.Current.Persons.Add(personToBeAdded);
 
 
+            _logger.LogInformation($"Added NEW Person with the ID: {personToBeAdded.Id}, Name: {personToBeAdded.Name}, and Email: {personToBeAdded.Email}.");
             return CreatedAtRoute(
                 "GetPersons",
                 new { id = personToBeAdded.Id },
@@ -116,9 +118,11 @@ namespace myApi.Controllers
 
 
 
-            //var personToBeAdded = _mapper.Map<Models.PersonModel>(createdPerson);
+            //var personToBeAdded = _mapper.Map<Entities.Person>(createdPerson);
 
-            //_personRepository.SavePerson(personToBeAdded);
+            //_personRepository.AddPerson(personToBeAdded);
+
+            //_personRepository.Save();
 
             //var createdPersonToBeReturned = _mapper.Map<Models.PersonDto>(personToBeAdded);
 
