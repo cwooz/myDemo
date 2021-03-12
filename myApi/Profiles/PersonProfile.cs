@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using myData.Models;
+using myApi.Models;
 
 namespace myApi.Profiles
 {
@@ -10,8 +12,8 @@ namespace myApi.Profiles
     {
         public PersonProfile()
         {
-            CreateMap<Models.PersonDto, Models.PersonModel>();
-            CreateMap<Models.PersonModel, Models.PersonForCreationDto>();
+            CreateMap<myData.Models.PersonDto, myApi.Models.PersonModel>();
+            CreateMap<myApi.Models.PersonModel, myData.Models.PersonForCreationDto>();
         }
     }
 }

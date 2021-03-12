@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4nIVcAtkvscDM36fJxfubg9UqV/mVX1tqE/7jvg+gtJjNKuln7vOEP+btlVrrReT6n3ZQyDMl9taQBlCQK3HJw==",
+  "dgSpecHash": "i4E4B965XFSnVrz6flOOU7F5Krze1TtU3vohbn3aJL4cLg4ZQ/1pH6wEwTGiQ3fIFrtrPGfZVh1mLzlDR+MxQw==",
   "success": true,
   "projectFilePath": "C:\\Users\\woosleyc\\source\\repos\\myDemo\\myApi\\myApi.csproj",
   "expectedPackageFiles": [
@@ -212,7 +212,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections.nongeneric\\4.3.0\\system.collections.nongeneric.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections.specialized\\4.3.0\\system.collections.specialized.4.3.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512",
+    "C:\\Users\\woosleyc\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.console\\4.3.0\\system.console.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.data.sqlclient\\4.5.1\\system.data.sqlclient.4.5.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.diagnostics.contracts\\4.3.0\\system.diagnostics.contracts.4.3.0.nupkg.sha512",

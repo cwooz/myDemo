@@ -12,5 +12,9 @@ namespace myData.Services
         PersonDto GetPerson(int id);
 
         void SavePerson(PersonDto person);
+
+        //void UpdatePerson(int id, Person person);
+
+        //void DeletePerson(Person person);
     }
 }
