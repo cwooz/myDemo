@@ -127,5 +127,34 @@ namespace myApi.Controllers
             //    new { id = createdPersonToBeReturned.Id },
             //    createdPersonToBeReturned);
         }
+
+
+        [HttpDelete("{id}")]
+        public IActionResult DeletePerson(int id)
+        {
+            var personExists = _personRepository.PersonExists(id);
+
+            try
+            {
+                if (!personExists)
+                {
+                    _logger.LogInformation($"Person with id: {id} was not found.");
+                    return NotFound();
+                }
+
+                var personToBeDeleted = _personRepository.GetPerson(id);
+
+                _personRepository.DeletePerson(personToBeDeleted);
+
+                _logger.LogInformation($"DELETED: Person with the ID: {id}");
+                return NoContent();
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogCritical($"Exception while getting a person with ID: {id}.", ex);
+                return StatusCode(500, "A problem happened while handling your request.");
+            }
+        }
     }
 }

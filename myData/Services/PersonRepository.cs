@@ -23,6 +23,21 @@ namespace myData.Services
         {
             PersonDataStore.Current.Persons.Add(person);
         }
+
+        public void UpdatePerson(int id, PersonDto person)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DeletePerson(PersonDto person)
+        {
+            PersonDataStore.Current.Persons.Remove(person);
+        }
+
+        public bool PersonExists(int id)
+        {
+            return PersonDataStore.Current.Persons.Any(p => p.Id == id);
+        }
     }
 
 

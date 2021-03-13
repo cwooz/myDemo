@@ -13,8 +13,10 @@ namespace myData.Services
 
         void SavePerson(PersonDto person);
 
-        //void UpdatePerson(int id, Person person);
+        void UpdatePerson(int id, PersonDto person);
 
-        //void DeletePerson(Person person);
+        void DeletePerson(PersonDto person);
+
+        bool PersonExists(int id);
     }
 }
