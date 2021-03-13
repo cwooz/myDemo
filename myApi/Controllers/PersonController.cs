@@ -29,8 +29,6 @@ namespace myApi.Controllers
         [HttpGet(Name = "GetPersons")]
         public IActionResult GetPersons()
         {
-            //return Ok(PersonDataStore.Current.Persons);               // Direct call to In-Memory Data Store
-
             var personsEntities = _personRepository.GetPersons();
 
             try
@@ -47,9 +45,11 @@ namespace myApi.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogCritical("Excection while getting a persons.", ex);
+                _logger.LogCritical("Exception while getting a persons.", ex);
                 return StatusCode(500, "A problem happened while handling your request.");
             }
+
+            //return Ok(PersonDataStore.Current.Persons);               // Direct call to In-Memory Data Store
         }
 
 
@@ -72,7 +72,7 @@ namespace myApi.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogCritical($"Excection while getting a person with ID: {id}.", ex);
+                _logger.LogCritical($"Exception while getting a person with ID: {id}.", ex);
                 return StatusCode(500, "A problem happened while handling your request.");
             }
 
@@ -105,7 +105,7 @@ namespace myApi.Controllers
                 Email = createdPerson.Email
             };
 
-            PersonDataStore.Current.Persons.Add(personToBeAdded);
+            _personRepository.SavePerson(personToBeAdded);
 
 
             _logger.LogInformation($"Added NEW Person with the ID: {personToBeAdded.Id}, Name: {personToBeAdded.Name}, and Email: {personToBeAdded.Email}.");
@@ -116,13 +116,11 @@ namespace myApi.Controllers
 
 
 
-            //var personToBeAdded = _mapper.Map<Entities.Person>(createdPerson);
+            //var personToBeAdded = _mapper.Map<Entities.PersonDto>(createdPerson);
 
-            //_personRepository.AddPerson(personToBeAdded);
+            //_personRepository.SavePerson(personToBeAdded);
 
-            //_personRepository.Save();
-
-            //var createdPersonToBeReturned = _mapper.Map<Models.PersonDto>(personToBeAdded);
+            //var createdPersonToBeReturned = _mapper.Map<Models.PersonModel>(personToBeAdded);
 
             //return CreatedAtRoute(
             //    "GetPersons",

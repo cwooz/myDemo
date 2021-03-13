@@ -1,4 +1,5 @@
-﻿using System;
+﻿using myData.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -8,6 +9,8 @@ namespace myApi.Models
 {
     public class PersonModel
     {
+        //public int Id = PersonDataStore.Current.Persons.Max(p => p.Id);    ++
+
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Please provide a name value.")]

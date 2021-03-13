@@ -12,7 +12,7 @@ namespace myApi.Profiles
     {
         public PersonProfile()
         {
-            CreateMap<PersonDto, PersonModel>().ReverseMap();
+            CreateMap<PersonDto, PersonModel>();
             CreateMap<PersonModel, PersonForCreationDto>();
         }
     }

@@ -16,7 +16,7 @@ namespace myData.Services
 
         public PersonDto GetPerson(int id)
         {
-            return (PersonDto)PersonDataStore.Current.Persons.Where(p => p.Id == id);       // Not working, if remove casting, gives error
+            return PersonDataStore.Current.Persons.Where(p => p.Id == id).FirstOrDefault();
         }
 
         public void SavePerson(PersonDto person)
