@@ -93,6 +93,7 @@ namespace myApi.Controllers
 
             if (!ModelState.IsValid)
             {
+                _logger.LogInformation($"Unable to ADD new Person with the Name: {createdPerson.Name}, and Email: {createdPerson.Email}.");
                 return BadRequest();
             }
 
@@ -126,6 +127,48 @@ namespace myApi.Controllers
             //    "GetPersons",
             //    new { id = createdPersonToBeReturned.Id },
             //    createdPersonToBeReturned);
+        }
+
+
+        [HttpPut("{id}")]
+        public IActionResult UpdatePerson(int id, [FromBody] PersonForCreationDto personToBeUpdated)
+        {
+            if (personToBeUpdated.Name == personToBeUpdated.Email)
+            {
+                ModelState.AddModelError(
+                    "Email",
+                    "The provided email should be different than the name.");       // Placeholder, for valid email check
+            }
+
+            if (!ModelState.IsValid)
+            {
+                _logger.LogInformation($"Unable to UPDATE Person [{id}] with the Name: {personToBeUpdated.Name}, and Email: {personToBeUpdated.Email}.");
+                return BadRequest();
+            }
+
+            var personExists = _personRepository.PersonExists(id);
+
+            try
+            {
+                if (!personExists)
+                {
+                    _logger.LogInformation($"Person with id: {id} was not found.");
+                    return NotFound();
+                }
+
+                //var personToBeUpdated = _personRepository.GetPerson(id);
+
+                //_personRepository.UpdatePerson(id, personToBeUpdated);
+
+                _logger.LogInformation($"UPDATED: Person with the ID: {id}");
+                return NoContent();
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogCritical($"Exception while getting a person with ID: {id}.", ex);
+                return StatusCode(500, "A problem happened while handling your request.");
+            }
         }
 
 
