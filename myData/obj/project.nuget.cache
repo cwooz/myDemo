@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "k3yQ+AjyIWw5U0FdPIEjByx9KpuoE9EaRMbLDZ7zA0IMylDP+n2u11BlUgNSsD2H7Dpg58SG7O68bBLeSF6H7Q==",
+  "dgSpecHash": "8ffdEUyc3vcU0wF/eigHSUzCIsvKra2cRYIiGXzfvJZzilelxJIE1eJPiQ6x11Q45F8uepAyLBIx2HPYtBeM3g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wooz\\source\\repos\\myDemo\\myData\\myData.csproj",
+  "projectFilePath": "C:\\Users\\woosleyc\\source\\repos\\myDemo\\myData\\myData.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\wooz\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\wooz\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\wooz\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\woosleyc\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

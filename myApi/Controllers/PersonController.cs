@@ -133,7 +133,7 @@ namespace myApi.Controllers
 
 
         [HttpPut("{id}")]
-        public IActionResult UpdatePerson(int id, [FromBody] PersonForCreationDto personToBeUpdated)
+        public IActionResult UpdatePerson(int id, [FromBody] PersonToBeUpdatedDto personToBeUpdated)
         {
             if (personToBeUpdated.Name == personToBeUpdated.Email)
             {

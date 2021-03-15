@@ -5,7 +5,7 @@ using System.Text;
 
 namespace myData.Entities
 {
-    public class PersonToBeUpdated
+    public class PersonToBeUpdatedDto
     {
         [Required(ErrorMessage = "Please provide a name value.")]
         [MaxLength(50)]

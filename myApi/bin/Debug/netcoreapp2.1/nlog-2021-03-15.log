@@ -1,0 +1,73 @@
+2021-03-15 09:12:01.1808|INFO|myApi.Program|Initializing application...
+2021-03-15 09:12:06.8780|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\woosleyc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-03-15 09:12:07.9792|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2021-03-15 09:12:07.9792|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2021-03-15 09:12:08.0295|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 45.9325ms 200 
+2021-03-15 09:12:08.1317|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 155.5774ms 404 text/plain
+2021-03-15 09:12:08.2574|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/favicon.ico  
+2021-03-15 09:12:08.2725|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 10.085ms 404 text/plain
+2021-03-15 09:12:08.6723|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/people/  
+2021-03-15 09:12:08.7169|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPersons", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPersons() on controller myApi.Controllers.PersonController (myApi).
+2021-03-15 09:12:09.1870|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method myApi.Controllers.PersonController.GetPersons (myApi) - Validation state: Valid
+2021-03-15 09:12:09.1990|INFO|myApi.Controllers.PersonController|Returned list of all Persons.
+2021-03-15 09:12:09.2462|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method myApi.Controllers.PersonController.GetPersons (myApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 47.8678ms.
+2021-03-15 09:12:09.2616|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myData.Entities.PersonDto, myData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-15 09:12:09.3347|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action myApi.Controllers.PersonController.GetPersons (myApi) in 602.6172ms
+2021-03-15 09:12:09.3619|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 683.6141ms 200 application/json; charset=utf-8
+2021-03-15 09:12:22.2507|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:1028/api/people/ application/json 59
+2021-03-15 09:12:22.2768|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "SavePerson", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SavePerson(myData.Entities.PersonForCreationDto) on controller myApi.Controllers.PersonController (myApi).
+2021-03-15 09:12:22.3595|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method myApi.Controllers.PersonController.SavePerson (myApi) - Validation state: Valid
+2021-03-15 09:12:22.3702|INFO|myApi.Controllers.PersonController|Added NEW Person with the ID: 4, Name: Timmy Tommy, and Email: test@email.com.
+2021-03-15 09:12:22.3783|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method myApi.Controllers.PersonController.SavePerson (myApi), returned result Microsoft.AspNetCore.Mvc.CreatedAtRouteResult in 10.1781ms.
+2021-03-15 09:12:22.3783|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'myData.Entities.PersonDto'.
+2021-03-15 09:12:22.4016|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action myApi.Controllers.PersonController.SavePerson (myApi) in 118.1306ms
+2021-03-15 09:12:22.4096|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 159.1145ms 201 application/json; charset=utf-8
+2021-03-15 09:15:17.6975|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/people/  
+2021-03-15 09:15:17.7241|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPersons", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPersons() on controller myApi.Controllers.PersonController (myApi).
+2021-03-15 09:15:17.7704|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method myApi.Controllers.PersonController.GetPersons (myApi) - Validation state: Valid
+2021-03-15 09:15:17.7704|INFO|myApi.Controllers.PersonController|Returned list of all Persons.
+2021-03-15 09:15:17.8042|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method myApi.Controllers.PersonController.GetPersons (myApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 21.8413ms.
+2021-03-15 09:15:17.8415|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myData.Entities.PersonDto, myData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-15 09:15:17.8566|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action myApi.Controllers.PersonController.GetPersons (myApi) in 116.5535ms
+2021-03-15 09:15:17.8862|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 184.1771ms 200 application/json; charset=utf-8
+2021-03-15 09:17:31.5420|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/people/  
+2021-03-15 09:17:31.5831|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPersons", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPersons() on controller myApi.Controllers.PersonController (myApi).
+2021-03-15 09:17:31.6194|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method myApi.Controllers.PersonController.GetPersons (myApi) - Validation state: Valid
+2021-03-15 09:17:31.6277|INFO|myApi.Controllers.PersonController|Returned list of all Persons.
+2021-03-15 09:17:31.6639|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method myApi.Controllers.PersonController.GetPersons (myApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.5287ms.
+2021-03-15 09:17:31.6639|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myData.Entities.PersonDto, myData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-15 09:17:31.6843|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action myApi.Controllers.PersonController.GetPersons (myApi) in 90.4959ms
+2021-03-15 09:17:31.6966|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 170.1214ms 200 application/json; charset=utf-8
+2021-03-15 09:17:36.4371|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:1028/api/people/4  59
+2021-03-15 09:17:36.4452|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "DeletePerson", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeletePerson(Int32) on controller myApi.Controllers.PersonController (myApi).
+2021-03-15 09:17:36.4743|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method myApi.Controllers.PersonController.DeletePerson (myApi) - Validation state: Valid
+2021-03-15 09:17:36.4743|INFO|myApi.Controllers.PersonController|DELETED: Person with the ID: 4
+2021-03-15 09:17:36.4940|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method myApi.Controllers.PersonController.DeletePerson (myApi), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 12.8578ms.
+2021-03-15 09:17:36.5066|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2021-03-15 09:17:36.5066|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action myApi.Controllers.PersonController.DeletePerson (myApi) in 62.8965ms
+2021-03-15 09:17:36.5268|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 87.8439ms 204 
+2021-03-15 09:17:36.5394|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM77MFNQ0HH2", Request id "0HM77MFNQ0HH2:00000002": the application completed without reading the entire request body.
+2021-03-15 09:17:39.5137|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/people/  
+2021-03-15 09:17:39.5218|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPersons", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPersons() on controller myApi.Controllers.PersonController (myApi).
+2021-03-15 09:17:39.5582|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method myApi.Controllers.PersonController.GetPersons (myApi) - Validation state: Valid
+2021-03-15 09:17:39.5667|INFO|myApi.Controllers.PersonController|Returned list of all Persons.
+2021-03-15 09:17:39.5667|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method myApi.Controllers.PersonController.GetPersons (myApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11.5778ms.
+2021-03-15 09:17:39.5859|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myData.Entities.PersonDto, myData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-15 09:17:39.6174|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action myApi.Controllers.PersonController.GetPersons (myApi) in 69.6353ms
+2021-03-15 09:17:39.6578|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 114.3737ms 200 application/json; charset=utf-8
+2021-03-15 09:17:44.7467|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:1028/api/people/ application/json 59
+2021-03-15 09:17:44.7524|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "SavePerson", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SavePerson(myData.Entities.PersonForCreationDto) on controller myApi.Controllers.PersonController (myApi).
+2021-03-15 09:17:44.7861|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method myApi.Controllers.PersonController.SavePerson (myApi) - Validation state: Valid
+2021-03-15 09:17:44.7861|INFO|myApi.Controllers.PersonController|Added NEW Person with the ID: 4, Name: Timmy Tommy, and Email: test@email.com.
+2021-03-15 09:17:44.8053|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method myApi.Controllers.PersonController.SavePerson (myApi), returned result Microsoft.AspNetCore.Mvc.CreatedAtRouteResult in 9.3477ms.
+2021-03-15 09:17:44.8053|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'myData.Entities.PersonDto'.
+2021-03-15 09:17:44.8279|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action myApi.Controllers.PersonController.SavePerson (myApi) in 60.8748ms
+2021-03-15 09:17:44.8443|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 91.8766ms 201 application/json; charset=utf-8
+2021-03-15 09:17:47.3530|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/people/  
+2021-03-15 09:17:47.3640|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPersons", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPersons() on controller myApi.Controllers.PersonController (myApi).
+2021-03-15 09:17:47.3984|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method myApi.Controllers.PersonController.GetPersons (myApi) - Validation state: Valid
+2021-03-15 09:17:47.4103|INFO|myApi.Controllers.PersonController|Returned list of all Persons.
+2021-03-15 09:17:47.4103|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method myApi.Controllers.PersonController.GetPersons (myApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.9681ms.
+2021-03-15 09:17:47.4260|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myData.Entities.PersonDto, myData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-15 09:17:47.4450|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action myApi.Controllers.PersonController.GetPersons (myApi) in 62.3012ms
+2021-03-15 09:17:47.4623|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 102.8454ms 200 application/json; charset=utf-8
