@@ -48,8 +48,6 @@ namespace myApi.Controllers
                 _logger.LogCritical("Exception while getting a persons.", ex);
                 return StatusCode(500, "A problem happened while handling your request.");
             }
-
-            //return Ok(PersonDataStore.Current.Persons);               // Direct call to In-Memory Data Store
         }
 
 
@@ -75,9 +73,6 @@ namespace myApi.Controllers
                 _logger.LogCritical($"Exception while getting a person with ID: {id}.", ex);
                 return StatusCode(500, "A problem happened while handling your request.");
             }
-
-            //var personToReturn = PersonDataStore.Current.Persons.FirstOrDefault(p => p.Id == id);        // Direct call to In-Memory Data Store
-            //return Ok(personToReturn);
         }
 
 
@@ -108,15 +103,6 @@ namespace myApi.Controllers
             _logger.LogInformation($"ADDED NEW Person with ID: {personToBeAdded.Id}, Name: {personToBeAdded.Name}, and Email: {personToBeAdded.Email}.");
             return CreatedAtRoute(
                 "GetPersons", personToBeAdded);
-
-            //var personToBeAdded = new PersonDto()
-            //{
-            //    Id = ++maxPersonId,
-            //    Name = createdPerson.Name,
-            //    Email = createdPerson.Email
-            //};
-            //_personRepository.SavePerson(personToBeAdded);
-            //return CreatedAtRoute("GetPersons", personToBeAdded);
         }
 
 
