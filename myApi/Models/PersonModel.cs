@@ -9,8 +9,6 @@ namespace myApi.Models
 {
     public class PersonModel
     {
-        //public int Id = PersonDataStore.Current.Persons.Max(p => p.Id);    ++
-
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Please provide a name value.")]

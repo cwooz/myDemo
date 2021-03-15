@@ -82,7 +82,7 @@ namespace myApi.Controllers
 
 
         [HttpPost]
-        public IActionResult SavePerson([FromBody] PersonForCreationDto createdPerson)
+        public IActionResult SavePerson([FromBody] PersonDto createdPerson)
         {
             if (createdPerson.Name == createdPerson.Email)
             {
@@ -98,42 +98,30 @@ namespace myApi.Controllers
             }
 
             var maxPersonId = PersonDataStore.Current.Persons.Max(p => p.Id);        // Direct call to In-Memory Data Store
+            createdPerson.Id = ++maxPersonId;                                        // To Increment ID for NEW Person
 
-            var personToBeAdded = new PersonDto()
-            {
-                Id = ++maxPersonId,
-                Name = createdPerson.Name,
-                Email = createdPerson.Email
-            };
+            var personToBeAdded = _mapper.Map<PersonDto>(createdPerson);
 
             _personRepository.SavePerson(personToBeAdded);
 
 
-            _logger.LogInformation($"Added NEW Person with the ID: {personToBeAdded.Id}, Name: {personToBeAdded.Name}, and Email: {personToBeAdded.Email}.");
+            _logger.LogInformation($"ADDED NEW Person with ID: {personToBeAdded.Id}, Name: {personToBeAdded.Name}, and Email: {personToBeAdded.Email}.");
             return CreatedAtRoute(
-                "GetPersons",
-                new { id = personToBeAdded.Id },
-                personToBeAdded);
+                "GetPersons", personToBeAdded);
 
-
-
-            //var personToBeAdded = _mapper.Map<Entities.PersonDto>(createdPerson);
-
+            //var personToBeAdded = new PersonDto()
+            //{
+            //    Id = ++maxPersonId,
+            //    Name = createdPerson.Name,
+            //    Email = createdPerson.Email
+            //};
             //_personRepository.SavePerson(personToBeAdded);
-
-            //var createdPersonToBeReturned = _mapper.Map<Models.PersonModel>(personToBeAdded);
-
-            //return CreatedAtRoute(
-            //    "GetPersons",
-            //    new { id = createdPersonToBeReturned.Id },
-            //    createdPersonToBeReturned);
+            //return CreatedAtRoute("GetPersons", personToBeAdded);
         }
 
 
-
-
         [HttpPut("{id}")]
-        public IActionResult UpdatePerson(int id, [FromBody] PersonToBeUpdatedDto personToBeUpdated)
+        public IActionResult UpdatePerson(int id, [FromBody] PersonDto personToBeUpdated)
         {
             if (personToBeUpdated.Name == personToBeUpdated.Email)
             {
@@ -158,9 +146,13 @@ namespace myApi.Controllers
                     return NotFound();
                 }
 
-                //var personToBeUpdated = _personRepository.GetPerson(id);
+                var personBeingUpdated = _personRepository.GetPerson(id);
 
-                //_personRepository.UpdatePerson(id, personToBeUpdated);
+                personBeingUpdated.Name = personToBeUpdated.Name;
+                personBeingUpdated.Email = personToBeUpdated.Email;
+
+                //_mapper.Map(personToBeUpdated, personBeingUpdated);
+                //_personRepository.UpdatePerson(id, personBeingUpdated);
 
                 _logger.LogInformation($"UPDATED: Person with the ID: {id}");
                 return NoContent();
