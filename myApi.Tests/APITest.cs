@@ -3,7 +3,7 @@ using Xunit;
 
 namespace myApi.Tests
 {
-    public class UnitTest1
+    public class APITest
     {
         [Fact]
         public void Test1()

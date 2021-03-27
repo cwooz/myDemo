@@ -19,4 +19,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\myApi\myApi.csproj" />
+    <ProjectReference Include="..\myData\myData.csproj" />
+  </ItemGroup>
+
 </Project>

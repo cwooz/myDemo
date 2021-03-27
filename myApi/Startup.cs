@@ -30,15 +30,7 @@ namespace myApi
                     o.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
                 });
 
-            //services.AddSwaggerGen(c =>
-            //{
-            //    c.SwaggerDoc("v1", new Info
-            //    {
-            //        Version = "v1",
-            //        Title = "myDemo.API",
-            //        Description = ".Net Core Web API"
-            //    });
-            //});
+            services.AddSwaggerGen();
 
             services.AddScoped<IPersonRepository, PersonRepository>();
 
@@ -57,16 +49,16 @@ namespace myApi
                 app.UseExceptionHandler();
             }
 
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "MyDemoAPI V1");
+            });
+
             app.UseStatusCodePages();
 
             app.UseMvc();
-
-            //app.UseSwagger();
-
-            //app.UseSwaggerUI(c =>
-            //{
-            //    c.SwaggerEndpoint("/swagger/v1/swagger.json", "MyDemoAPI V1");
-            //});
         }
     }
 }
