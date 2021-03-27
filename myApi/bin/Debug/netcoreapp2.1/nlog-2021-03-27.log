@@ -14,3 +14,33 @@
 2021-03-27 14:17:41.0644|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myData.Entities.PersonDto, myData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
 2021-03-27 14:17:41.1057|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action myApi.Controllers.PersonController.GetPersons (myApi) in 222.448ms
 2021-03-27 14:17:41.1057|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 240.5057ms 200 application/json; charset=utf-8
+2021-03-27 18:15:22.4270|INFO|myApi.Program|Initializing application...
+2021-03-27 18:15:23.2668|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\wooz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-03-27 18:15:23.4914|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2021-03-27 18:15:23.4914|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2021-03-27 18:15:23.5038|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12.3114ms 200 
+2021-03-27 18:15:23.5498|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 59.1598ms 404 text/plain
+2021-03-27 18:15:23.7316|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2021-03-27 18:15:23.7316|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.6588ms 404 text/plain
+2021-03-27 18:15:23.7823|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/favicon.ico  
+2021-03-27 18:15:23.7823|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2.9569ms 404 text/plain
+2021-03-27 18:16:05.0539|INFO|myApi.Program|Initializing application...
+2021-03-27 18:16:05.8575|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\wooz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-03-27 18:16:06.0456|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2021-03-27 18:16:06.0582|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12.1085ms 200 
+2021-03-27 18:16:08.6668|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/people  
+2021-03-27 18:16:08.7371|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPersons", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPersons() on controller myApi.Controllers.PersonController (myApi).
+2021-03-27 18:16:08.8973|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method myApi.Controllers.PersonController.GetPersons (myApi) - Validation state: Valid
+2021-03-27 18:16:08.8973|INFO|myApi.Controllers.PersonController|Returned list of all Persons.
+2021-03-27 18:16:08.9188|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method myApi.Controllers.PersonController.GetPersons (myApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 18.4557ms.
+2021-03-27 18:16:08.9255|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myData.Entities.PersonDto, myData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-27 18:16:08.9533|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action myApi.Controllers.PersonController.GetPersons (myApi) in 213.3034ms
+2021-03-27 18:16:08.9533|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 289.8535ms 200 application/json; charset=utf-8
+2021-03-27 18:16:10.8695|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/people  
+2021-03-27 18:16:10.8695|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPersons", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPersons() on controller myApi.Controllers.PersonController (myApi).
+2021-03-27 18:16:10.8695|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method myApi.Controllers.PersonController.GetPersons (myApi) - Validation state: Valid
+2021-03-27 18:16:10.8695|INFO|myApi.Controllers.PersonController|Returned list of all Persons.
+2021-03-27 18:16:10.8695|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method myApi.Controllers.PersonController.GetPersons (myApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.4595ms.
+2021-03-27 18:16:10.8761|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myData.Entities.PersonDto, myData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-27 18:16:10.8761|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action myApi.Controllers.PersonController.GetPersons (myApi) in 5.3657ms
+2021-03-27 18:16:10.8761|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.9094ms 200 application/json; charset=utf-8

@@ -136,7 +136,7 @@ namespace myApi.Controllers
                 personBeingUpdated.Name = personToBeUpdated.Name;
                 personBeingUpdated.Email = personToBeUpdated.Email;
 
-                //_mapper.Map(personToBeUpdated, personBeingUpdated);
+                //var updatedPerson = _mapper.Map(personToBeUpdated, personBeingUpdated);
                 //_personRepository.UpdatePerson(id, personBeingUpdated);
 
                 _logger.LogInformation($"UPDATED: Person with the ID: {id}");

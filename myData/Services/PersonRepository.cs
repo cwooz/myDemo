@@ -24,7 +24,8 @@ namespace myData.Services
 
         public void UpdatePerson(int id, PersonDto person)
         {
-            throw new NotImplementedException();
+            var personToUpdate = PersonDataStore.Current.Persons.Where(p => p.Id == id);
+            //personToUpdate.Property = person.Property;
         }
 
         public void DeletePerson(PersonDto person)
