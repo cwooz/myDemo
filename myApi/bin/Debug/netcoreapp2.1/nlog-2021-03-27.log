@@ -96,3 +96,15 @@
 2021-03-27 18:43:00.7996|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 0.5464ms 404 text/plain
 2021-03-27 18:43:00.8327|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/v1/swagger.json  
 2021-03-27 18:43:00.9036|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 70.9032ms 200 application/json;charset=utf-8
+2021-03-27 19:14:39.1036|INFO|myApi.Program|Initializing application...
+2021-03-27 19:14:39.9016|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\wooz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-03-27 19:14:40.2149|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2021-03-27 19:14:40.2271|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11.1106ms 200 
+2021-03-27 19:14:45.2657|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/v1/swagger.json  
+2021-03-27 19:14:45.3746|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 108.7168ms 200 application/json;charset=utf-8
+2021-03-27 22:02:01.7674|INFO|myApi.Program|Initializing application...
+2021-03-27 22:02:02.5232|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\wooz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-03-27 22:02:02.7980|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2021-03-27 22:02:02.7980|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 13.0061ms 200 
+2021-03-27 22:02:07.2889|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/v1/swagger.json  
+2021-03-27 22:02:07.3991|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 109.9742ms 200 application/json;charset=utf-8
