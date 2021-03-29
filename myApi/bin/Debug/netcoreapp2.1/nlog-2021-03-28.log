@@ -1,0 +1,8 @@
+2021-03-28 10:48:07.3806|INFO|myApi.Program|Initializing application...
+2021-03-28 10:48:08.4677|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\wooz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-03-28 10:48:08.8256|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2021-03-28 10:48:08.8403|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 14.0158ms 200 
+2021-03-28 10:48:22.6232|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/v1/swagger.json  
+2021-03-28 10:48:22.7277|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 104.4814ms 200 application/json;charset=utf-8
+2021-03-28 10:48:22.8183|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/favicon.ico  
+2021-03-28 10:48:22.8503|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 31.9543ms 404 text/plain
