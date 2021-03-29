@@ -11,7 +11,7 @@ namespace myData.Services
 
         void SavePerson(PersonDto person);
 
-        void UpdatePerson(int id, PersonDto person);
+        void UpdatePerson(int id, PersonDto person, PersonDto updatedPerson);
 
         void DeletePerson(PersonDto person);
 

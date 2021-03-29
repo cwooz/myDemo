@@ -22,14 +22,10 @@ namespace myData.Services
             PersonDataStore.Current.Persons.Add(person);
         }
 
-        public void UpdatePerson(int id, PersonDto person)
+        public void UpdatePerson(int id, PersonDto person, PersonDto updatedPerson)
         {
-            var personToUpdate = PersonDataStore.Current.Persons.Where(p => p.Id == id).FirstOrDefault();
-            if (personToUpdate != null)
-            {
-                personToUpdate.Name = person.Name;
-                personToUpdate.Email = person.Email;
-            }
+                person.Name = updatedPerson.Name;
+                person.Email = updatedPerson.Email;
         }
 
         public void DeletePerson(PersonDto person)
