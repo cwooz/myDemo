@@ -132,7 +132,6 @@ namespace myApi.Controllers
                 }
 
                 var personBeingUpdated = _personRepository.GetPerson(id);
-
                 personBeingUpdated.Name = personToBeUpdated.Name;
                 personBeingUpdated.Email = personToBeUpdated.Email;
 

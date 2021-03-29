@@ -24,8 +24,12 @@ namespace myData.Services
 
         public void UpdatePerson(int id, PersonDto person)
         {
-            var personToUpdate = PersonDataStore.Current.Persons.Where(p => p.Id == id);
-            //personToUpdate.Property = person.Property;
+            var personToUpdate = PersonDataStore.Current.Persons.Where(p => p.Id == id).FirstOrDefault();
+            if (personToUpdate != null)
+            {
+                personToUpdate.Name = person.Name;
+                personToUpdate.Email = person.Email;
+            }
         }
 
         public void DeletePerson(PersonDto person)
