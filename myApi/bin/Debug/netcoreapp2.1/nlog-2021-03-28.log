@@ -6,3 +6,100 @@
 2021-03-28 10:48:22.7277|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 104.4814ms 200 application/json;charset=utf-8
 2021-03-28 10:48:22.8183|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/favicon.ico  
 2021-03-28 10:48:22.8503|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 31.9543ms 404 text/plain
+2021-03-28 20:51:02.2716|INFO|myApi.Program|Initializing application...
+2021-03-28 20:51:03.1998|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\wooz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-03-28 20:51:03.5770|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2021-03-28 20:51:03.5901|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12.4346ms 200 
+2021-03-28 20:51:11.2329|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/v1/swagger.json  
+2021-03-28 20:51:11.3341|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 101.0768ms 200 application/json;charset=utf-8
+2021-03-28 20:51:18.2766|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/people  
+2021-03-28 20:51:18.3157|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPersons", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPersons() on controller myApi.Controllers.PersonController (myApi).
+2021-03-28 20:51:18.4780|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method myApi.Controllers.PersonController.GetPersons (myApi) - Validation state: Valid
+2021-03-28 20:51:18.4780|INFO|myApi.Controllers.PersonController|Returned list of all Persons.
+2021-03-28 20:51:18.5003|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method myApi.Controllers.PersonController.GetPersons (myApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 19.5525ms.
+2021-03-28 20:51:18.5003|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myData.Entities.PersonDto, myData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-28 20:51:18.5340|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action myApi.Controllers.PersonController.GetPersons (myApi) in 215.3883ms
+2021-03-28 20:51:18.5340|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 258.7522ms 200 application/json; charset=utf-8
+2021-03-28 20:52:16.9827|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/v1/swagger.json  
+2021-03-28 20:52:16.9865|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.945ms 200 application/json;charset=utf-8
+2021-03-28 20:52:20.2202|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/  
+2021-03-28 20:52:20.2202|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.5258ms 301 
+2021-03-28 20:52:20.2202|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/index.html  
+2021-03-28 20:52:20.2963|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 69.2783ms 200 text/html;charset=utf-8
+2021-03-28 20:52:20.3280|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/swagger-ui.css  
+2021-03-28 20:52:20.3297|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/swagger-ui-bundle.js  
+2021-03-28 20:52:20.3297|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/swagger-ui-standalone-preset.js  
+2021-03-28 20:52:20.3600|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-03-28 20:52:20.3600|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-03-28 20:52:20.3600|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-03-28 20:52:20.3600|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 38.5931ms 200 text/css
+2021-03-28 20:52:20.3600|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 36.963ms 200 application/javascript
+2021-03-28 20:52:20.3600|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 35.5119ms 200 application/javascript
+2021-03-28 20:52:20.4715|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/v1/swagger.json  
+2021-03-28 20:52:20.4715|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2.0032ms 200 application/json;charset=utf-8
+2021-03-28 20:53:25.4485|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/swagger-ui-bundle.js.map  
+2021-03-28 20:53:25.4485|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/swagger-ui-standalone-preset.js.map  
+2021-03-28 20:53:25.4565|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/swagger-ui.css.map  
+2021-03-28 20:53:25.4565|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.5494ms 404 text/plain
+2021-03-28 20:53:25.4708|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12.1453ms 404 text/plain
+2021-03-28 20:53:25.4708|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 15.7087ms 404 text/plain
+2021-03-28 20:55:10.3913|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/swagger-ui.css.map  
+2021-03-28 20:55:10.4200|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28.8829ms 404 text/plain
+2021-03-28 20:55:10.4684|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/swagger-ui-bundle.js.map  
+2021-03-28 20:55:10.4698|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.3309ms 404 text/plain
+2021-03-28 20:55:10.4906|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/swagger-ui-standalone-preset.js.map  
+2021-03-28 20:55:10.4906|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.6612ms 404 text/plain
+2021-03-28 20:55:13.7991|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/swagger-ui.css.map  
+2021-03-28 20:55:13.7991|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.6469ms 404 text/plain
+2021-03-28 20:55:13.8599|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/swagger-ui-bundle.js.map  
+2021-03-28 20:55:13.8599|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/swagger-ui-standalone-preset.js.map  
+2021-03-28 20:55:13.8599|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2.8163ms 404 text/plain
+2021-03-28 20:55:13.8599|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2.2737ms 404 text/plain
+2021-03-28 20:55:18.5080|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/people  
+2021-03-28 20:55:18.5080|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPersons", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPersons() on controller myApi.Controllers.PersonController (myApi).
+2021-03-28 20:55:18.5080|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method myApi.Controllers.PersonController.GetPersons (myApi) - Validation state: Valid
+2021-03-28 20:55:18.5080|INFO|myApi.Controllers.PersonController|Returned list of all Persons.
+2021-03-28 20:55:18.5080|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method myApi.Controllers.PersonController.GetPersons (myApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.68ms.
+2021-03-28 20:55:18.5080|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myData.Entities.PersonDto, myData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-28 20:55:18.5165|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action myApi.Controllers.PersonController.GetPersons (myApi) in 5.9184ms
+2021-03-28 20:55:18.5165|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 10.007ms 200 application/json; charset=utf-8
+2021-03-28 20:55:51.2610|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:1028/api/people/ application/json 59
+2021-03-28 20:55:51.2715|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "SavePerson", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SavePerson(myData.Entities.PersonDto) on controller myApi.Controllers.PersonController (myApi).
+2021-03-28 20:55:51.2924|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method myApi.Controllers.PersonController.SavePerson (myApi) - Validation state: Valid
+2021-03-28 20:55:51.2924|INFO|myApi.Controllers.PersonController|ADDED NEW Person with ID: 4, Name: Timmy Tommy, and Email: test@mail.com.
+2021-03-28 20:55:51.2924|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method myApi.Controllers.PersonController.SavePerson (myApi), returned result Microsoft.AspNetCore.Mvc.CreatedAtRouteResult in 2.8998ms.
+2021-03-28 20:55:51.2975|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'myData.Entities.PersonDto'.
+2021-03-28 20:55:51.2975|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action myApi.Controllers.PersonController.SavePerson (myApi) in 28.3593ms
+2021-03-28 20:55:51.2975|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 41.3443ms 201 application/json; charset=utf-8
+2021-03-28 20:55:57.8087|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/people  
+2021-03-28 20:55:57.8087|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPersons", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPersons() on controller myApi.Controllers.PersonController (myApi).
+2021-03-28 20:55:57.8134|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method myApi.Controllers.PersonController.GetPersons (myApi) - Validation state: Valid
+2021-03-28 20:55:57.8134|INFO|myApi.Controllers.PersonController|Returned list of all Persons.
+2021-03-28 20:55:57.8134|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method myApi.Controllers.PersonController.GetPersons (myApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.3872ms.
+2021-03-28 20:55:57.8134|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myData.Entities.PersonDto, myData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-28 20:55:57.8134|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action myApi.Controllers.PersonController.GetPersons (myApi) in 7.5626ms
+2021-03-28 20:55:57.8134|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11.5261ms 200 application/json; charset=utf-8
+2021-03-28 20:56:51.7711|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/swagger-ui.css.map  
+2021-03-28 20:56:51.7711|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.6629ms 404 text/plain
+2021-03-28 20:56:51.8267|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/swagger-ui-standalone-preset.js.map  
+2021-03-28 20:56:51.8285|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/swagger-ui-bundle.js.map  
+2021-03-28 20:56:51.8285|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.2605ms 404 text/plain
+2021-03-28 20:56:51.8285|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2.7101ms 404 text/plain
+2021-03-28 20:57:53.1313|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/swagger-ui.css.map  
+2021-03-28 20:57:53.1313|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 15.4572ms 404 text/plain
+2021-03-28 20:57:53.1815|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/swagger-ui-standalone-preset.js.map  
+2021-03-28 20:57:53.1815|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/swagger/swagger-ui-bundle.js.map  
+2021-03-28 20:57:53.1815|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.3275ms 404 text/plain
+2021-03-28 20:57:53.1880|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2.8154ms 404 text/plain
+2021-03-28 22:03:34.3549|INFO|myApi.Program|Initializing application...
+2021-03-28 22:03:34.6883|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\wooz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-03-28 22:03:34.9434|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/people  
+2021-03-28 22:03:35.0106|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetPersons", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPersons() on controller myApi.Controllers.PersonController (myApi).
+2021-03-28 22:03:35.1635|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method myApi.Controllers.PersonController.GetPersons (myApi) - Validation state: Valid
+2021-03-28 22:03:35.1635|INFO|myApi.Controllers.PersonController|Returned list of all Persons.
+2021-03-28 22:03:35.1818|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method myApi.Controllers.PersonController.GetPersons (myApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.4861ms.
+2021-03-28 22:03:35.1818|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[myData.Entities.PersonDto, myData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-03-28 22:03:35.2085|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action myApi.Controllers.PersonController.GetPersons (myApi) in 196.2989ms
+2021-03-28 22:03:35.2085|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 268.3371ms 200 application/json; charset=utf-8
+2021-03-28 22:03:35.3077|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/favicon.ico  
+2021-03-28 22:03:35.3077|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 0.7351ms 404 text/plain
