@@ -8,7 +8,7 @@ namespace myApi.Profiles
     {
         public PersonProfile()
         {
-            CreateMap<PersonDto, PersonModel>();
+            CreateMap<PersonDto, PersonModel>().ReverseMap();
             //CreateMap<PersonForCreationDto, PersonModel>();
             //CreateMap<PersonToBeUpdatedDto, PersonModel>();
         }

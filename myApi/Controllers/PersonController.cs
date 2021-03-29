@@ -98,7 +98,6 @@ namespace myApi.Controllers
 
             _personRepository.SavePerson(personToBeAdded);
 
-
             _logger.LogInformation($"ADDED NEW Person with ID: {personToBeAdded.Id}, Name: {personToBeAdded.Name}, and Email: {personToBeAdded.Email}.");
             return CreatedAtRoute(
                 "GetPersons", personToBeAdded);
