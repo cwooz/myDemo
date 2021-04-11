@@ -2,11 +2,21 @@ using System;
 using Xunit;
 using System.Net.Http;
 using myApi.Controllers;
+using myData.Services;
 
 namespace myApi.Tests
 {
     public class APITest
     {
+        //private readonly PersonRepository _service;
+        //private readonly PersonController _controller;
+
+        //public APITest()
+        //{
+        //    _service = new PersonRepository();
+        //    _controller = new PersonController(_service, );
+        //}
+
         [Fact]
         public void GetPersonById()
         {
