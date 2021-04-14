@@ -31,5 +31,37 @@ Navigate to ```http://localhost:1028/api/people``` to check if the API is workin
 
 Navigate to ```http://localhost:1028/swagger``` to check the API documentation.
 
+	
+## Projects Description
+This is a compilation list of various projects I have been working on since *[25 February 2021]*. These are the .Net applications and Pluralsight courses that have been completed or I am working on currently. The other main resource I've been utilizing is the main Microsoft [documentation](https://docs.microsoft.com/en-us/dotnet/). Along with those stackoverflow and various blog articles (medium, dev.io, c-sharpcorner and several others).
+
+- [Various .Net Projects](https://github.com/cwooz/dotNet_Projects)
+    -   []()
+    - 
+- [BudgetCalculator](https://github.com/cwooz/BudgetCalculator)
+    -   []()
+    - 
+- [CityInfoAPI](https://github.com/cwooz/CityInfo.API)
+    -   []()
+    - 
+- [IdeasWebApp](https://github.com/cwooz/IdeasWebApp)
+    -   []()
+    - 
+- [CommanderAPI](https://github.com/cwooz/CommanderAPI)
+    -   []()
+    - 
+- [CampsAPI](https://github.com/cwooz/CampsAPI)
+    -   []()
+    - 
+- [Fox's Tale](https://github.com/cwooz/FoxTale)
+    -   []()
+    - 
+- [NumberWizardConsole](https://github.com/cwooz/NumberWizardConsole)
+    -   []()
+    - 
+
+<br/>
+<br/>
+
 <img alt='Screen Shot' src="./public/img/localhost_1028_swagger.png" width="888">
 <img alt='Screen Shot' src="./public/img/localhost_1028_api_people.png" width="888">
