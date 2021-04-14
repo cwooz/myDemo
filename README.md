@@ -33,32 +33,31 @@ Navigate to ```http://localhost:1028/swagger``` to check the API documentation.
 
 	
 ## Projects Description
-This is a compilation list of various projects I have been working on since *[25 February 2021]*. These are the .Net applications and Pluralsight courses that have been completed or I am working on currently. The other main resource I've been utilizing is the main Microsoft [documentation](https://docs.microsoft.com/en-us/dotnet/). Along with those stackoverflow and various blog articles (medium, dev.io, c-sharpcorner and several others).
+This is a compilation list of various projects I have been working on since *[25 February 2021]*. These are the .Net applications and Pluralsight courses that I have completed or am working on currently. The other main resources I've been utilizing is the Microsoft [documentation](https://docs.microsoft.com/en-us/dotnet/), along with stackoverflow and various blog sites (medium, devio, c-sharpcorner and several others).
 
 - [Various .Net Projects](https://github.com/cwooz/dotNet_Projects)
-    -   []()
-    - 
+    - C# Fundamentals [link](https://app.pluralsight.com/library/courses/csharp-fundamentals-dev/table-of-contents)
+    - C# Generics [link](https://app.pluralsight.com/library/courses/csharp-generics/table-of-contents)
+    - LINQ Fundamentals [link](https://app.pluralsight.com/library/courses/linq-fundamentals-csharp-6/table-of-contents)
+    - Entity Framework Core [link](https://app.pluralsight.com/library/courses/entity-framework-core-get-started/table-of-contents)
+    - API ASP.NET Core [link](https://app.pluralsight.com/library/courses/building-api-aspdotnet-core/table-of-contents)
+    - Building API with ASP.NET Core [link](https://app.pluralsight.com/library/courses/asp-dotnet-core-api-building-first/table-of-contents)
+    - Best Practices: Entities, Validation, and View Models [link](https://app.pluralsight.com/library/courses/aspdotnet-core-bestpractices-models/)
 - [BudgetCalculator](https://github.com/cwooz/BudgetCalculator)
-    -   []()
-    - 
+    - Basic personal finance budget calculator.
 - [CityInfoAPI](https://github.com/cwooz/CityInfo.API)
-    -   []()
-    - 
+    - Basic API of cities with points of interest.
 - [IdeasWebApp](https://github.com/cwooz/IdeasWebApp)
-    -   []()
-    - 
+    - Fullstack .Net web application for recording ideas (Todo app).
 - [CommanderAPI](https://github.com/cwooz/CommanderAPI)
-    -   []()
-    - 
+    - API for recording and storing command line inputs.
 - [CampsAPI](https://github.com/cwooz/CampsAPI)
-    -   []()
-    - 
+    -  API for Code Camps Information.
+    -  [Pluralsight](https://app.pluralsight.com/library/courses/building-api-aspdotnet-core/table-of-contents)
 - [Fox's Tale](https://github.com/cwooz/FoxTale)
-    -   []()
-    - 
+    - Unity Engine 2D Platformer game using open-source assets from unity community, somewhere between Mario and Sonic.
 - [NumberWizardConsole](https://github.com/cwooz/NumberWizardConsole)
-    -   []()
-    - 
+    - Console Application Unity Engine Project: Calculates numbers from user input and display in the console.
 
 <br/>
 <br/>
