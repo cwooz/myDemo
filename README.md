@@ -31,7 +31,6 @@ Navigate to ```http://localhost:1028/api/people``` to check if the API is workin
 
 Navigate to ```http://localhost:1028/swagger``` to check the API documentation.
 
-	
 ## Projects Description
 This is a compilation list of various projects I have been working on since *[25 February 2021]*. These are the .Net applications and Pluralsight courses that I have completed or am working on currently. The other main resources I've been utilizing is the Microsoft [documentation](https://docs.microsoft.com/en-us/dotnet/), along with stackoverflow and various blog sites (medium, devio, c-sharpcorner and several others).
 
