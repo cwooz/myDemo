@@ -53,7 +53,6 @@ This is a compilation list of various projects I have been working on since *[25
     - API for recording and storing command line inputs.
 - [CampsAPI](https://github.com/cwooz/CampsAPI)
     -  API for Code Camps Information.
-    -  [Pluralsight](https://app.pluralsight.com/library/courses/building-api-aspdotnet-core/table-of-contents)
 - [Fox's Tale](https://github.com/cwooz/FoxTale)
     - Unity Engine 2D Platformer game using open-source assets from unity community, somewhere between Mario and Sonic.
 - [NumberWizardConsole](https://github.com/cwooz/NumberWizardConsole)
